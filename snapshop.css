@@ -49,7 +49,7 @@ body{
     position: relative;
 }
 header .logo img{
-    height: 130px;
+    height: 120px;
     width: auto;
 }
 .header__img{
@@ -117,6 +117,7 @@ header .logo img{
     display: flex;
     justify-content: space-between;
     height: calc(100vh - 250px);
+    position: relative;
 }
 .hero__info{
     display: flex;
@@ -146,6 +147,11 @@ header .logo img{
     font-size: var(--h1);
     font-weight: var(--bold);
     line-height: 1.2;
+}
+.hero__float_img{
+    position: absolute;
+    bottom: -50px;
+    left: -5%;
 }
 .hero__img{
     padding-left: 50px;
@@ -189,6 +195,12 @@ header .logo img{
     display: flex;
     height: calc(100vh);
 }
+.about_us__img--ver{
+    position: absolute;
+    right: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .about_us__info{
     display: flex;
     justify-content: center;
@@ -215,8 +227,14 @@ header .logo img{
     font-weight: var(--normal);
 }
 .about_us__img{
+    position: relative;
     padding-left: 50px;
     width: 50%;
+}
+.about_us__img--float{
+    position: absolute;
+    top: -150px;
+    right: -50px;
 }
 .about_us_2{
     align-items: center;
@@ -227,21 +245,38 @@ header .logo img{
 }
 .about_us_2__img{
     padding: 50px 100px;
+    position: relative;
     width: 50%;
 }
+.about_us_2__img--float{
+    position: absolute;
+    left: -30%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
 .about_us_2__img--p{
-    color:var(--second-color);
+    color: var(--second-color);
     position: absolute;
     left: 0;
     opacity: .2;
-    top: 50%;
-    font-size: 90px;
+    top: 0;
+    font-size: 105px;
     right: 0;
     writing-mode: vertical-lr;
     text-transform: capitalize;
-    transform: translateY(-50%);
     font-weight: bold;
     pointer-events: none;
+    text-align: center;
+    height: 100%;
+}
+.about_us_2__img--p span{
+    position: relative;
+}
+.about_us_2__img--p span::after{
+    content: url(images/vertical.jpg);
+    position: absolute;
+    right: 100px;
+    top: 0;
 }
 .about_us_2__info{
     flex-direction: column;
