@@ -7,6 +7,9 @@
     <title>Snapshop</title>
 
     <link rel="stylesheet" href="snapshop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -16,9 +19,10 @@
                     <img src="images/snapshop.svg" alt="Snapshop">
                 </div>
                 <nav>
-                    <div class="switch">
-
-                    </div>
+                    <label class="switch">
+                        <input type="checkbox">
+                            <span class="slider round"></span>
+                    </label>
                 </nav>
             </div>
         </div>
@@ -31,14 +35,10 @@
                         <span class="hero__info--span">
                             We're still working
                         </span>
-                        <h1>Get Notified<br> When We Launch</h1>
+                        <h1>Get Notified When We Launch</h1>
                         <div class="hero__info--input">
-                            <span>
-                                Enter your email adress
-                            </span>
-                            <button>
-                                Notify Me
-                            </button>
+                            <input type="email" placeholder="Enter Your Email Adress">
+                            <input type="button" value="NOTIFY">
                         </div>
                     </div>
                     <div class="hero__img">
