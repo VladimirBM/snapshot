@@ -45,10 +45,17 @@ body{
     display: flex;
     justify-content: space-between;
     height: 200px;
+    margin-top: 50px;
+    position: relative;
 }
 header .logo img{
     height: 130px;
     width: auto;
+}
+.header__img{
+    position: absolute;
+    top: 0;
+    right: 20%;
 }
 /* The switch - the box around the slider */
 .switch {
@@ -109,7 +116,7 @@ header .logo img{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 250px);
 }
 .hero__info{
     display: flex;
@@ -349,3 +356,44 @@ header .logo img{
 .card__works p{
     text-align: center;
 }
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:50px 0;
+}
+.social_media p{
+    margin-bottom: 10px;
+}
+.social_media{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.social_media__img{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.social_media__img a{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+}
+.footer__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+    width: 50%;
+}
+.footer__nav a{
+    color:var(--color);
+    text-decoration: none;
+}
+.empty{
+    width: 30%;
+}
+
