@@ -317,6 +317,27 @@ header .logo img{
 }
 #works{
     margin-bottom: 600px;
+    position: relative;
+}
+.works__img--float{
+    position: absolute;
+    top: -50px;
+    right: 0px;
+}
+.works__img--float2{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+}
+.works__img--float3{
+    position: absolute;
+    top: 70%;
+    right: 0;
+}
+.works__img--float4{
+    position: absolute;
+    top: 100%;
+    left: 0;
 }
 #works h2{
     color: var(--second-color);
@@ -353,10 +374,27 @@ header .logo img{
     top: 130px;
 }
 .card__works--3{
+    position: relative;
     top: 300px;
+}
+.card__works--3_img{
+    top: -150px;
+    position: absolute;
+    left: 0;
 }
 .card__works--4, .card__works--5{
     top:350px
+}
+.card__works--4_img{
+    position: absolute;
+    right: 0;
+    top: -150px;
+}
+.card__works--5_img
+{
+    position: absolute;
+    right: -200px;
+    top: 100px;
 }
 .card__works span{
     background-color: var(--second-color);
@@ -405,7 +443,13 @@ footer{
     justify-content: center;
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 30%;
+}
+.social_media--img{
+    position: absolute;
+    top: -150px;
+    right: 50px;
 }
 .social_media__img{
     align-items: center;
@@ -430,5 +474,14 @@ footer{
 }
 .empty{
     width: 30%;
+    position: relative;
 }
+.empty--img{
+    position: absolute;
+    right: 0;
+    top: -150px;
+}
+
+/*MEDIA*/
+
 
