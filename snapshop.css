@@ -483,82 +483,181 @@ footer{
 }
 
 /*MEDIA*/
-.container{
-    padding:0 15px;
-    width: 100%;
+@media (max-width:1024px) {
+    .container{
+        padding:0 15px;
+        width: 100%;
+    }
+    .hero{
+        height: initial;
+        flex-direction: column;
+    }
+    .hero__info{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+    .hero__info--input{
+        margin:0 auto;
+        width: 400px;
+    }
+    .hero__info--span{
+        font-size: 30px;    
+        padding-left: 0;
+    }
+    .hero__info--span::before{
+        top: 5px;
+        left: -60px;
+    }
+    .hero__float_img, .social_media--img, .empty--img, .card__works--5_img, .about_us__img--ver, .about_us__img--float{
+        display: none;
+    }
+    .hero__img{
+        padding-left: initial;
+        width: 100%;
+    }
+    .about_us{
+        height: initial;
+        flex-direction: column;
+    }
+    .about_us__info{
+        width: 100%;
+        padding-right: 0;
+    }
+    .about_us__img{
+        width: 100%;
+        padding-left: 0;
+    }
+    .about_us_2{
+        height: initial;
+        flex-direction: column;
+    }
+    .about_us_2__img{
+        width: 100%;
+    }
+    .about_us_2__info{
+        width: 100%;
+    }
+    #works{
+        margin-bottom: 100px;
+    }
+    .works{
+        flex-flow: column nowrap;
+    }
+    .card__works{
+        width: 100%;
+    }
+    .card__works--2,.card__works--3,.card__works--4,.card__works--5{
+        top: initial;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .social_media{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .footer__nav{
+        width: 100%;
+    }
 }
-.hero{
-    height: initial;
-    flex-direction: column;
-}
-.hero__info{
-    text-align: center;
-    width: 100%;
-    padding: 0 130px;
-}
-.hero__info--input{
-    margin:0 auto;
-    width: 500px;
-}
-.hero__info--span{
-    font-size: 30px;
-}
-.hero__info--span::before{
-    top: 5px;
-    left: -60px;
-}
-.hero__float_img, .social_media--img, .empty--img, .card__works--5_img, .about_us__img--ver, .about_us__img--float{
-    display: none;
-}
-.hero__img{
-    padding-left: initial;
-    width: 100%;
-}
-.about_us{
-    height: initial;
-    flex-direction: column;
-}
-.about_us__info{
-    width: 100%;
-    padding-right: 0;
-}
-.about_us__img{
-    width: 100%;
-    padding-left: 0;
-}
-.about_us_2{
-    height: initial;
-    flex-direction: column;
-    display: none;
-}
-.about_us_2__img{
-    width: 100%;
-}
-.about_us_2__info{
-    width: 100%;
-}
-#works{
-    margin-bottom: 100px;
-}
-.works{
-    flex-flow: column nowrap;
-}
-.card__works{
-    width: 100%;
-}
-.card__works--2,.card__works--3,.card__works--4,.card__works--5{
-    top: initial;
-}
-.footer{
-    flex-direction: column;
-}
-.social_media{
-    margin-bottom: 20px;
-    width: 100%;
-}
-.footer__nav{
-    width: 100%;
-}
+@media (max-width:767px){
+    body{
+        font-size: 12px;
+    }
+    .header{
+        height: initial;
+        margin-top: 0;
+        padding: 20px 0;
+    }
+    .hero__info--input{
+        width: 100%;
+    }
+    header .logo img{
+        height: 100px;
+    }
+    .switch{
+        width: 65px;
+        height: 25px;
+    }
+    .switch .slider:before{
+        height: 35px;
+        width: 35px;
+        left: -15px;
+        bottom: -8px;
+        line-height: 52px
+    }
+    .header__img{
+        right: 50%;
+        width: 60%;
+        transform: translateX(50%);
+    }
+    #hero{
+        margin-bottom: 20px;
+    }
+    .hero__info--span::before{
+        top: 5px;
+        left: 10px;
+    }
+    .hero__info--span::after{
+        background-color: var(--main-color);
+        border-radius: var(--radius);
+        content: "";
+        height: 4px;
+        width: 42px;
+        position: absolute;
+        transform: translateY(14px);
+        top: 5px;
+        right: 10px;
+    }
+    .hero__info h1{
+        font-size: 38px;
+    }
+    .hero__info--input{
+        width: 85%;
+    }
+    .hero__info--input input[type=email]{
+        height: 60px;
+    }
+    .hero__info--input input[type=email]::placeholder{
+        font-size: 12px;
+    }
+    .hero__info--input input[type=button]{
+        height: 60px;
+        padding: 0 30px;
+    }
+    .about_us h2{
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .about_us h2::before{
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .about_us h5{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .about_us_2__img{
+        display: none;
+    }
+    .values picture{
+        padding:0;
+    }
+    .values__info h3{
+        font-size: 26px;
+    }
+    #works h2{
+        font-size: 38px;
+    }
+    .works__img--float2, .card__works--4_img{
+        display: none;
+    }
+    .card__works{
+        margin-bottom: 10px;
+    }
+}  
 
 
 
